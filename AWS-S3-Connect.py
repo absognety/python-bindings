@@ -15,7 +15,7 @@ file_format = 'csv' # parquet/csv/json etc
 
 if file_format == 'csv':
     # To read csv
-    FILE_TO_READ = 'path/to/your/csvfile/here/filenamehere.csv'
+    FILE_TO_READ = 'path/to/your/csvfile/here/filenamehere.csv' #Refer key in your metadata of the file to be read in S3
     client = boto3.client('s3',
                        aws_access_key_id=AWS_ACCESS_KEY_ID,
                        aws_secret_access_key=AWS_SECRET_ACCESS_KEY
